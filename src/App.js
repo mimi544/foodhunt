@@ -6,7 +6,7 @@ import { Header, CreateContainer, MainContainer } from "./components";
 const App = () => {
   return (
     <Router>
-      <div className="w-screen h-auto flex flex-col bg-cyan-300">
+      <div className="w-screen h-auto flex flex-col bg-cyan-400">
         <Header />
         <main className="mt-24 p-8 w-full">
           <Routes>
