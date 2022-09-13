@@ -6,7 +6,7 @@ import {MdAddShoppingCart} from "react-icons/md";
 const Header = () => {
   return (
     <header className="fixed w-screen z-50 p-6 px-16">
-    { /*desktop & tablet* nuuuuuuuu*/}
+    { /*desktop & tablet*/}
     <div className="hidden md:flex w-full h-full items-center justify-between">
       <div className="flex items-center gap-2">
         <img src={Logo} className="w-10 object-cover" alt="logo"/>
