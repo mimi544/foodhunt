@@ -22,6 +22,7 @@ const Header = () => {
         type : actionType.SET_USER,
         user : providerData[0],
       });
+      localStorage.setItem('user', JSON.stringify(providerData[0]))
   };
   return (
     <header className="fixed w-screen z-50 p-6 px-16">
@@ -47,7 +48,7 @@ const Header = () => {
       <div className="relative">
       <motion.img whileTap={{scale : 0.6}} 
         src={user ? user.photoURL : Avatar} 
-        className="w-5 min-w-[40px] h-5 min-h-[40px] drop-shadow-2xl cursor-pointer " 
+        className="w-5 min-w-[40px] h-5 min-h-[40px] drop-shadow-2xl cursor-pointer rounded-full " 
         alt="userprofile"
         onClick={login}
       />
